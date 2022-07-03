@@ -22,7 +22,8 @@ body {
 
 /** Globales **/
 .contenedor {
-    width: min(90%, 120rem);
+    max-width: 120rem;
+    width: 90%;
     margin: 0 auto;
 }
 a {
@@ -131,7 +132,7 @@ img {
     font-family: var(--fuenteHeading);
     color: var(--blanco);
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 1rem 4rem;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -155,7 +156,7 @@ img {
     background-color: var(--primario);
 }
 
-.cursos {
+.list {
     list-style: none;
 }
 
@@ -204,5 +205,45 @@ img {
     }
     .imagen__reflejo {
         height: 100%;
+    }
+}
+.bg__conectar {
+    background-color: #784D3C;
+    margin-top: 4rem;
+}
+.formulario {
+    width: 95%;
+}
+.campo {
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+
+}.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--grisclaro);
+}
+.campo__field--textarea {
+    height: 20rem;
+}
+.boton__conectar {
+    font-size: 2.5rem;
+}
+.campo__boton {
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    .boton__conectar {
+        padding: 2rem 4rem;
+    }
+    .campo__boton {
+        justify-content: flex-end;
     }
 }
