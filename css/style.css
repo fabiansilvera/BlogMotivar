@@ -247,3 +247,33 @@ img {
         justify-content: flex-end;
     }
 }
+.error {
+    background-color: rgb(185, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    width: 105.3%;
+}
+.seccion-conectar__metodo {
+     font-size: 3rem;
+     margin-left: 3rem;
+}
+.seccion-conectar__parrafo {
+    font-size: 2.5rem;
+    margin-left: 3rem;
+}
+.btn-cerrar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--blanco);
+    color: var(--negro);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    margin-left: 90%;
+}
+.btn-cerrar:hover {
+    cursor: pointer;
+}

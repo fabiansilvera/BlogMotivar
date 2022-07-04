@@ -7,8 +7,6 @@
     <meta name="description" content="Blog Motivacional">
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
-
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     
     <link rel="preload" href="css/style.css" as="style">
@@ -64,8 +62,8 @@
             <div class="campo campo__boton">
                 <input type="submit" value="Enviar" class="boton boton__conectar boton--primario">
             </div>
+            <div id="lista-tareas"></div>
         </form>
-
     </section>
 
     <footer class="footer">
@@ -83,7 +81,15 @@
             </div>
         </div>
     </footer>
+
+    <template id="template">
+        <h2 class="centrar-texto">Pieza #1</h2>
+        <h3 class="seccion-conectar__metodo">metodo
+        </h3>
+        <p class="seccion-conectar__parrafo">texto</p>
+    </template>
     
     <script src="js/modernizr.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
