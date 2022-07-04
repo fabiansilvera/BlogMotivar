@@ -32,8 +32,8 @@ formulario.addEventListener('submit',e => {
         mostrarError('Todos los campos son obligatorios');
         return;
         } else {
-            generarSeccion(e)
-            listaTarea.appendChild(cerrarSeccion)  
+            generarSeccion(e) 
+            listaTarea.appendChild(cerrarSeccion)
         };
 });
 function leertexto(e) {
@@ -59,9 +59,10 @@ const generarSeccion = (e) => {
         mensaje: datos.mensaje,
         estado: false
     }
-    datos[datos.id] = dato
+    datos[dato.id] = dato
     formulario.reset()
     usarDatos()
+    
 }
 const usarDatos = () => {
     listaTarea.innerHTML = ''
@@ -73,15 +74,12 @@ const usarDatos = () => {
     fragment.appendChild(clone)
     })
     listaTarea.appendChild(fragment) 
-
-
     
-      
-}
- const cerrarSeccion= document.createElement('p');
+    const cerrarSeccion= document.createElement('p');
     cerrarSeccion.textContent = 'X';
     cerrarSeccion.classList.add('btn-cerrar');
     cerrarSeccion.classList.add('btn-cerrar__posicion');
     cerrarSeccion.onclick = function() {
-        listaTarea.remove();
-}
+       listaTarea.remove();
+    }
+ }
