@@ -45,7 +45,7 @@
 
     <section class="contenedor bg__conectar">
         
-        <form class="formulario">
+        <form class="formulario" id="userInput">
             <h2 class="centrar-texto">Crea tu Sección Motivar</h2>
             <div class="campo">
                 <label class="campo__label" for="titulo">Titulo</label>
@@ -60,10 +60,11 @@
                 <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
             </div>
             <div class="campo campo__boton">
-                <input type="submit" value="Enviar" class="boton boton__conectar boton--primario">
+                <input type="submit" value="Enviar" class="boton boton__conectar boton--primario" id="boton">
             </div>
-            <div id="lista-tareas">
-            <div id="seccion"></div>
+            <div id="error"></div>
+
+            <div id="crearSeccion">
             </div>
         </form>
     </section>
@@ -83,15 +84,7 @@
             </div>
         </div>
     </footer>
-
-    <template id="template">
-        <h2 class="centrar-texto">Pieza #1</h2>
-        <h3 class="seccion-conectar__metodo">metodo
-        </h3>
-        <p class="seccion-conectar__parrafo">texto</p>
-        <i id="delete"></i>
-    </template>
-    
+ 
     <script src="js/modernizr.js"></script>
     <script src="js/scripts.js"></script>
 </body>

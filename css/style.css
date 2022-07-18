@@ -263,17 +263,15 @@ img {
     font-size: 2.5rem;
     margin-left: 3rem;
 }
-.btn-cerrar {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
+.posicion-boton {
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
+}  
+.botonCerrar{
     background-color: var(--blanco);
-    color: var(--negro);
-    display: grid;
-    place-items: center;
-    font-weight: 700;
-    margin-left: 90%;
+    border-radius: 50%;
 }
-.btn-cerrar:hover {
+.botonCerrar:hover {
     cursor: pointer;
 }
